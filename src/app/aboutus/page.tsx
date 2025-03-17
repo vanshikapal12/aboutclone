@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ArrowRight, DiamondIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 // import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Check } from "lucide-react";
+// import { Check } from "lucide-react";
 import StorySection from "@/components/story-section";
 import CompanyValuesSection from "@/components/company-value-section";
 import JourneyTimeline from "@/components/journey-timeline";
