@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 
 export default function StorySection() {
   return (
@@ -20,8 +20,8 @@ export default function StorySection() {
               Behind Us
             </h2>
             <h4 className="text-lg md:text-xl mt-2 text-left text-slate-700 dark:text-slate-300">
-              It all started with one question: What if hiring didn't have to
-              feel like gambling on a hunch?
+              It all started with one question: What if hiring didn&apos;t have
+              to feel like gambling on a hunch?
             </h4>
             <div className="flex flex-wrap justify-center mt-6 md:mt-12 gap-2 md:gap-4">
               <div className="w-full sm:w-[calc(50%-0.5rem)] p-1 md:p-2">
