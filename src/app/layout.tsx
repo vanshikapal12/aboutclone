@@ -27,7 +27,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <StorySection />
+
           {children}
         </ThemeProvider>
       </body>
