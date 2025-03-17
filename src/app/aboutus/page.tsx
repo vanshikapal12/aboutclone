@@ -1,8 +1,12 @@
 import Image from "next/image";
-import { ArrowRight, DiamondIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+// import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+// import { Squares } from "@/components/ui/squares-background";
+
 // import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 // import { Check } from "lucide-react";
+import StandardsTabs from "@/components/standard-tabs";
 import StorySection from "@/components/story-section";
 import CompanyValuesSection from "@/components/company-value-section";
 import JourneyTimeline from "@/components/journey-timeline";
@@ -18,6 +22,7 @@ export default function page() {
           <div className="font-bold text-lg md:text-xl">Everything Talent</div>
         </header>
 
+        {/* background */}
         {/* First Section */}
         <main className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
           <div className="relative z-8 px-1">
@@ -70,90 +75,8 @@ export default function page() {
         </main>
       </div>
 
-      {/* Second Section */}
-      <main className="h-200">
-        <div className="text-center px-4 md:px-6 mb-8 md:mb-16 mt-10 md:mt-20">
-          <div className="text-purple-600 dark:text-purple-400 text-base md:text-lg font-medium mb-2">
-            Our Standards
-          </div>
-
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
-            The Fuel for{" "}
-            <span className="bg-gradient-to-r from-purple-600 to-blue-400 dark:from-purple-400 dark:to-blue-300 text-transparent bg-clip-text">
-              Our Vision
-            </span>
-          </h1>
-
-          <p className="text-muted-foreground text-sm md:text-base max-w-xs sm:max-w-lg md:max-w-2xl mx-auto mb-6 md:mb-8">
-            Driven by vision, we provide comprehensive solutions to meet all
-            your hiring needs.
-          </p>
-        </div>
-
-        <div className="container mx-auto px-4 py-8">
-          <div className="bg-purple-50 dark:bg-gray-900 rounded-2xl p-4 md:p-10 shadow-sm">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
-              <div className="space-y-4 md:space-y-6">
-                <h1 className="text-xl md:text-3xl font-bold">
-                  Security-Driven Solutions
-                </h1>
-                <div className="text-purple-600 dark:text-purple-400 font-medium">
-                  Vigilance
-                </div>
-
-                <p className="text-muted-foreground text-sm md:text-base">
-                  Confidence starts with security, and we are committed to
-                  enhancing your experience. Your security is woven into every
-                  part of our platform so you can drive forward without a second
-                  thought.
-                </p>
-
-                <div className="space-y-2 md:space-y-3">
-                  <div className="flex items-start gap-2">
-                    <div className="mt-1 bg-purple-100 dark:bg-purple-900/50 p-1 rounded-full">
-                      <DiamondIcon className="h-3 w-3 text-purple-600 dark:text-purple-400" />
-                    </div>
-                    <span className="text-xs md:text-sm">
-                      Prioritize end-to-end platform security
-                    </span>
-                  </div>
-
-                  <div className="flex items-start gap-2">
-                    <div className="mt-1 bg-purple-100 dark:bg-purple-900/50 p-1 rounded-full">
-                      <DiamondIcon className="h-3 w-3 text-purple-600 dark:text-purple-400" />
-                    </div>
-                    <span className="text-xs md:text-sm">
-                      Ensure protected recruitment experience
-                    </span>
-                  </div>
-
-                  <div className="flex items-start gap-2">
-                    <div className="mt-1 bg-purple-100 dark:bg-purple-900/50 p-1 rounded-full">
-                      <DiamondIcon className="h-3 w-3 text-purple-600 dark:text-purple-400" />
-                    </div>
-                    <span className="text-xs md:text-sm">
-                      Build confidence through data protection
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex justify-center md:justify-end mt-6 md:mt-0">
-                <div className="relative w-full aspect-video md:aspect-auto md:h-auto">
-                  <Image
-                    src="/ambition.jpg"
-                    alt="Security professional with digital lock interface"
-                    width={800}
-                    height={600}
-                    className="rounded-lg object-cover w-full h-full"
-                    layout="responsive"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
+      {/* second section */}
+      <StandardsTabs />
 
       {/* Story Section as the Third Section */}
       <StorySection />
