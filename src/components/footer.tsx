@@ -252,10 +252,10 @@ export default function Footer() {
         </div>
 
         {/* Cityscape */}
-        <div className="relative h-40 sm:h-60 md:h-80 mb-4 overflow-hidden rounded-lg">
+        <div className="relative w-full h-40 sm:h-60 md:h-80 mb-4 overflow-hidden">
           <Image
             src="/bottom_san_fransisco_skyline.webp"
-            alt="City skyline"
+            alt="San Francisco skyline"
             fill
             className="object-cover object-bottom"
           />

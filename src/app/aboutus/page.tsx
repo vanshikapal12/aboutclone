@@ -26,8 +26,8 @@ export default function page() {
         {/* First Section */}
         <main className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
           <div className="relative z-8 px-1">
-            <div className="absolute -z-10 w-[150px] sm:w-[300px] h-[150px] sm:h-[300px] rounded-full border border-purple-500/20 top-[-25px] sm:top-[-50px] left-[-50px] sm:left-[-100px]"></div>
-            <div className="absolute -z-10 w-[250px] sm:w-[500px] h-[250px] sm:h-[500px] rounded-full border border-purple-500/10 top-[-75px] sm:top-[-150px] left-[-100px] sm:left-[-200px]"></div>
+            {/* <div className="absolute -z-10 w-[150px] sm:w-[300px] h-[150px] sm:h-[300px] rounded-full border border-purple-500/20 top-[-25px] sm:top-[-50px] left-[-50px] sm:left-[-100px]"></div> */}
+            {/* <div className="absolute -z-10 w-[250px] sm:w-[500px] h-[250px] sm:h-[500px] rounded-full border border-purple-500/10 top-[-75px] sm:top-[-150px] left-[-100px] sm:left-[-200px]"></div> */}
 
             <div className="space-y-4 md:space-y-6">
               <div className="uppercase text-xs md:text-sm tracking-wider font-medium">

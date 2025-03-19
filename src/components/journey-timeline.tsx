@@ -2,9 +2,9 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
-import { Moon, Sun, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import { ReactLenis } from "lenis/react";
 
@@ -70,7 +70,7 @@ const timelineData = [
 ];
 
 export default function JourneyTimeline() {
-  const { theme, setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const container = useRef(null);
 
@@ -90,9 +90,9 @@ export default function JourneyTimeline() {
     <ReactLenis root>
       <main
         ref={container}
-        className="bg-slate-100 dark:bg-slate-950 transition-colors duration-300"
+        className="bg-slate-100 dark:bg-slate-950 transition-colors duration-300 "
       >
-        {/* Theme Toggle */}
+        {/* Theme Toggle
         <div className="fixed top-4 right-4 z-50">
           <Button
             variant="outline"
@@ -107,10 +107,9 @@ export default function JourneyTimeline() {
             )}
             <span className="sr-only">Toggle theme</span>
           </Button>
-        </div>
-
+        </div> */}
         {/* Hero Section */}
-        <section className="h-[70vh] w-full grid place-content-center relative">
+        <section className="h-[40vh] w-full grid place-content-center relative ">
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
 
           <div className="text-center space-y-4 px-4 relative z-10">
@@ -134,7 +133,6 @@ export default function JourneyTimeline() {
             </div>
           </div>
         </section>
-
         {/* Timeline Cards Section */}
         <section className="w-full">
           {timelineData.map((item, i) => {
@@ -155,7 +153,6 @@ export default function JourneyTimeline() {
             );
           })}
         </section>
-
         {/* Footer */}
       </main>
     </ReactLenis>
@@ -185,7 +182,7 @@ const TimelineCard = ({
   return (
     <div
       ref={container}
-      className="h-screen flex items-center justify-center sticky top-0"
+      className="h-150 flex items-center justify-center sticky top-0"
     >
       <motion.div
         style={{
@@ -204,22 +201,6 @@ const TimelineCard = ({
               <div className="text-sm font-medium opacity-80">{label}</div>
               <h3 className="text-3xl md:text-4xl font-bold">{year}</h3>
             </div>
-
-            {/* {year === "2024" && (
-              <div className="mt-2 md:mt-0 bg-slate-200 dark:bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 dark:text-white">
-                  Everything AI 2.0
-                </h3>
-              </div>
-            )}
-
-            {year === "2022" && (
-              <div className="mt-2 md:mt-0 bg-slate-200 dark:bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 dark:text-white">
-                  Everything<span className="text-yellow-400">AI</span>
-                </h3>
-              </div>
-            )} */}
           </div>
 
           {/* Content Section */}
